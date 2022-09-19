@@ -1,0 +1,26 @@
+{
+  "name": "react-translate",
+  "description": "A quickstart framework for a React/Express API with localization",
+  "author": "Gabriel Chantayan",
+  "homepage": "https://github.com/gabrielchantayan/Express-React-Localization-Quickstart",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev-server": "nodemon -r dotenv/config --trace-warnings server.js dotenv_config_path=./.env.dev -e js",
+    "dev-client": "npm start --prefix client",
+    "dev": "concurrently \"npm run dev-server\" \"npm run dev-client\"",
+    "generateAPI": "node ./tools/api/generateAPI.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "concurrently": "^7.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20"
+  }
+}

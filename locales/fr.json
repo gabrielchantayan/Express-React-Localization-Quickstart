@@ -1,0 +1,1 @@
+{"fallbacks":["en.json"],"version":1,"name":"Français","helloWorld":"Bonjour le monde!","testText":"Ceci est un texte de test","fallbackTest":"This text should be in a fallback language"}

@@ -1,0 +1,6 @@
+{
+    "fallbacks" : ["fr.json", "en.json"],
+    "version" : 1,
+    "name" : "Keymash",
+    "helloWorld" : "Bonjo23r23r233r23r2r23r23ur le r!"
+}

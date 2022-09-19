@@ -1,0 +1,25 @@
+{
+    "exampleRoute" : {
+        "getExample" : {
+            "name" : "Get example",
+            "description" : "An example of a get request",
+            "params" : "",
+            "type" : "GET"
+        },
+        "postExample" : {
+            "name" : "Post example",
+            "description" : "An example of a post request",
+            "params" : "",
+            "type" : "POST"
+        }
+    },
+
+    "locale" : {
+        "getLocale" : {
+            "name" : "Get locale",
+            "description" : "Gets a locale file. Returns default locale if invalid choice.",
+            "params" : "locale",
+            "type" : "GET"
+        }
+    }
+}
