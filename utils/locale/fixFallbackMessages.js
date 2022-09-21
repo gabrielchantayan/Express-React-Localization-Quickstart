@@ -1,6 +1,5 @@
-import { readFile, writeFile } from 'fs/promises';
+import { readFile } from 'fs/promises';
 import mergeLocales from './mergeLocales.js';
-import { logInit } from '../misc/logger.js'
 
 // Fill in fallback messages for locales
 export default async function fixFallbackMessages(locale){

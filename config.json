@@ -1,0 +1,1 @@
+{"environment":"dev","locales":["dd","en","fr"],"environmentVariables":{"LOG_PREFIXES":true,"LOG_DEBUG":true,"LOG_FILESYSTEM":true,"AXIOS_API_PORT":":3080"}}

@@ -1,25 +1,18 @@
 // Module imports
 import 'dotenv/config'  // DotEnv
+import { readEnvVariable } from '../config/envVariables.js'
 import { stringToBool } from './misc.js'
 
 // DotEnvs
-const doesLogPrefixes   =  stringToBool(process.env.LOG_PREFIXES)
-const doesLogDebug      =  stringToBool(process.env.LOG_DEBUG)
-const doesLogFS         =  stringToBool(process.env.LOG_FS)
+const doesLogPrefixes   =  await readEnvVariable('LOG_PREFIXES');
+const doesLogDebug      =  await readEnvVariable('LOG_DEBUG');
+const doesLogFS         =  await readEnvVariable('LOG_FILESYSTEM');
 const doesLogAxios      =  stringToBool(process.env.LOG_AXIOS)
 const doesLogDB         =  stringToBool(process.env.LOG_DB)
 const doesLogInit       =  true;
 
-// // Convert dotenv to bool.
-// function denvTruthy(process){
-
-//     let evald = (process === 'true')
-
-//     return (evald || false);
-// }
-
 function logInit(text) {
-    if (doesLogInit == true) console.log(genMsg('initialize', text));
+    if (doesLogInit == true) console.log(genMsg('init', text));
 }
 
 function logDebug(text) {
